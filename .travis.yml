@@ -10,12 +10,7 @@ rvm:
 notifications:
   email:
     recipients:
-      - victorfgcabeceira@gmail.com
-      - ricardocdzg@hotmail.com
-      - tamara-bt@hotmail.com
-      - danielhmarinho@gmail.com
-      - mdiebr@gmail.com
-branches:
-  only:
-
-    - master
+      - kleberbritomoreira10@gmail.com
+      - kleber_kbm@hotmail.com
+      - Gustavo.sabino@hotmail.com
+    on_success: always  
