@@ -1,38 +1,38 @@
 class CampaignsController < ApplicationController
 
 	def new
-		@campaign = kleberCampaign.new
+		@campaign = Campaign.new
 	end
 
 	def create
-		@campaign = kleberCampaign.new(campaign_params)
+		@campaign = Campaign.new(campaign_params)
 		if @campaign.save
 			redirect_to campanhas_path, notice: "Criado com sucesso!"
 		end
 	end
 
 	def show
-    	@campaign = kleberCampaign.find(params[:id])
+    	@campaign = Campaign.find(params[:id])
 	end
 
 	def index
       @user = current_user
-  		@campaigns = kleberCampaign.all
+  		@campaigns = Campaign.all
 	end
 
 	def destroy
-    	@campaign = kleberCampaign.find(params[:id]).destroy
+    	@campaign = Campaign.find(params[:id]).destroy
     	redirect_to campanhas_path, notice: "Campanha deletada."
 	end
 
 	def edit
-    @campaign = kleberCampaign.find params[:id]
+    @campaign = Campaign.find params[:id]
 
       redirect_to "/campaigns" unless @campaign
     end
 
   def update
-    @campaign = kleberCampaign.find params[:id]
+    @campaign = Campaign.find params[:id]
 
     if @campaign.update_attributes(campaign_params)
       redirect_to campaigns_path, :notice => "Campanha foi atualizada"
