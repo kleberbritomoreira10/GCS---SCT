@@ -12,7 +12,5 @@ notifications:
     recipients:
       - kleberbritomoreira10@gmail.com
       - kleber_kbm@hotmail.com
-branches:
-  only:
+    on_success: always  
 
-    - all
