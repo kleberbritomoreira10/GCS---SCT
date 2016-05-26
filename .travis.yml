@@ -6,7 +6,7 @@ script:
   - bundle exec rake
 
 rvm:
-  - 2.1.0
+  - 1.27.0
 notifications:
   email:
     recipients:
