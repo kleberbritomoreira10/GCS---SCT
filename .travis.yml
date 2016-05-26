@@ -11,6 +11,7 @@ notifications:
   email:
     recipients:
       - kleberbritomoreira10@gmail.com
+      - kleber_kbm@hotmail.com
     on_success: always
       
 branches:
