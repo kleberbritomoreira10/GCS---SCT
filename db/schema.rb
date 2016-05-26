@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150608144306) do
+ActiveRecord::Schema.define(version: 20150619174303) do
 
   create_table "campaigns", force: :cascade do |t|
     t.string   "name"
@@ -55,11 +55,11 @@ ActiveRecord::Schema.define(version: 20150608144306) do
 
   create_table "drugs", force: :cascade do |t|
     t.string   "name"
+    t.string   "description"
     t.string   "drug_type"
     t.string   "origin"
     t.string   "average_ingest"
     t.string   "ingestion_form"
-    t.string   "effect_average"
     t.string   "duration"
     t.string   "effect_high"
     t.string   "dependence_psychological"
@@ -72,9 +72,21 @@ ActiveRecord::Schema.define(version: 20150608144306) do
     t.float    "usage_percentage"
     t.float    "death_rate"
     t.float    "dependency_rate"
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
   end
 
   create_table "parsers", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "questions", force: :cascade do |t|
+    t.string   "content"
+    t.integer  "counter"
+    t.boolean  "answer"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

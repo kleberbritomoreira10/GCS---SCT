@@ -6,16 +6,15 @@ script:
   - bundle exec rake
 
 rvm:
-  - 2.1.0
+  - 1.27.0
 notifications:
   email:
     recipients:
-      - victorfgcabeceira@gmail.com
-      - ricardocdzg@hotmail.com
-      - tamara-bt@hotmail.com
-      - danielhmarinho@gmail.com
-      - mdiebr@gmail.com
+      - kleberbritomoreira10@gmail.com
+    on_success: always
+      
 branches:
   only:
 
     - master
+    - travis
