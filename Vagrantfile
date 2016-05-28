@@ -11,8 +11,6 @@ Vagrant.configure(2) do |config|
     v.name = "sct_vm"
   end
 
-  config.vm.network "forwarded_port", guest: 8000, host: 8080, auto_correct: true
-
   #Colocar os shell aqui. Shell são arquivos que realizam a instalação das dependências atraves de um #arquivo ".sh". Esses arquivos são lidos e então as "dependencias" são instaladas.
   #Abaixo segue os esquemas. 
 
@@ -21,18 +19,7 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", path: "script-three.sh"
   config.vm.provision "shell", path: "script-four.sh"
 
-  # Disable automatic box update checking. If you disable this, then
-  # boxes will only be checked for updates when the user runs
-  # `vagrant box outdated`. This is not recommended.
-  # config.vm.box_check_update = false     
-
-  # Create a private network, which allows host-only access to the machine
-  # using a specific IP.
-  # config.vm.network "private_network", ip: "192.168.33.10"
-
-  # Create a public network, which generally matched to bridged network.
-  # Bridged networks make the machine appear as another physical device on
-  # your network.
-  # config.vm.network "public_network"
+  config.vm.network "private_network", type: "dhcp"
+  config.vm.network "forwarded_port", guest: 8000, host: 8080, auto_correct: true
 
 end
