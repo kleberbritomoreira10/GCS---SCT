@@ -1,0 +1,3 @@
+misc:Pre-Depends=multiarch-support
+shlibs:Depends=libc6 (>= 2.17), libffi6 (>= 3.0.4), libgdbm3 (>= 1.8.3), libgmp10, libreadline6 (>= 6.0), libssl1.0.0 (>= 1.0.1d), libyaml-0-2, zlib1g (>= 1:1.2.2)
+misc:Depends=

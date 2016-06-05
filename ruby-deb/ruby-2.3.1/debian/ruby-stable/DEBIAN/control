@@ -1,0 +1,15 @@
+Package: ruby-stable
+Source: ruby
+Version: 2.3.1-1
+Architecture: amd64
+Maintainer: Kleber Brito <kleberbritomoreira10@gmail.com>
+Installed-Size: 45324
+Depends: libc6 (>= 2.17), libffi6 (>= 3.0.4), libgdbm3 (>= 1.8.3), libgmp10, libreadline6 (>= 6.0), libssl1.0.0 (>= 1.0.1d), libyaml-0-2, zlib1g (>= 1:1.2.2)
+Section: universe/ruby
+Priority: extra
+Homepage: http://ruby-lang.org
+Description: Interpreter of object-oriented scripting language Ruby, version 2.3.1
+ Ruby is the interpreted scripting language for quick and easy
+ object-oriented programming.  It has many features to process text
+ files and to do system management tasks (as in perl).  It is simple,
+ straight-forward, and extensible.

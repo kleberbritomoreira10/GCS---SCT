@@ -1,0 +1,18 @@
+Source: ruby
+Section: universe/ruby
+Priority: extra
+Maintainer: Kleber Brito <kleberbritomoreira10@gmail.com>
+Build-Depends: debhelper (>= 8.0.0), autotools-dev, libssl-dev, libyaml-dev, libreadline6-dev, libffi-dev, zlib1g-dev
+Standards-Version: 3.9.4
+Homepage: http://ruby-lang.org
+#Vcs-Git: git://git.debian.org/collab-maint/ruby.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/ruby.git;a=summary
+
+Package: ruby-stable
+Architecture: i386 amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, libyaml-0-2, libssl1.0.0, libffi6, zlib1g
+Description: Interpreter of object-oriented scripting language Ruby, version 2.3.1
+ Ruby is the interpreted scripting language for quick and easy
+ object-oriented programming.  It has many features to process text
+ files and to do system management tasks (as in perl).  It is simple,
+ straight-forward, and extensible.
