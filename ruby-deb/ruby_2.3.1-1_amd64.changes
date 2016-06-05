@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 05 Jun 2016 15:51:59 -0300
+Source: ruby
+Binary: ruby-stable
+Architecture: source amd64
+Version: 2.3.1-1
+Distribution: unstable
+Urgency: low
+Maintainer: Kleber Brito <kleberbritomoreira10@gmail.com>
+Changed-By: Kleber Brito <kleberbritomoreira10@gmail.com>
+Description: 
+ ruby-stable - Interpreter of object-oriented scripting language Ruby, version 2
+Changes: 
+ ruby (2.3.1-1) unstable; urgency=low
+ .
+   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+Checksums-Sha1: 
+ 9653ea8525a4a26deef3d63d64282c0ab8d39812 1420 ruby_2.3.1-1.dsc
+ c39b4001f7acb4e334cb60a0f4df72d434bef711 17797997 ruby_2.3.1.orig.tar.gz
+ 42f2ce85049c95b5d2f996f3084a49b38bea7970 2125 ruby_2.3.1-1.debian.tar.gz
+ a9ce7f98ad23b30cd4522633ab457da454eeb500 8410486 ruby-stable_2.3.1-1_amd64.deb
+Checksums-Sha256: 
+ 9526a581d1c4e3f3ae2c8d1da4a888db059da5452bb950b04107b1a8e450c1fe 1420 ruby_2.3.1-1.dsc
+ b87c738cb2032bf4920fef8e3864dc5cf8eae9d89d8d523ce0236945c5797dcd 17797997 ruby_2.3.1.orig.tar.gz
+ c688355e566910150aa8fdeb603ef37c809831544500cce5e640338336ef587c 2125 ruby_2.3.1-1.debian.tar.gz
+ 0f21d47f8927138e09921ddf873c7dce5eed413cc7a8bca6e045e11ab1c4817a 8410486 ruby-stable_2.3.1-1_amd64.deb
+Files: 
+ 4bd5702692eed927970fdbb777a6a8d2 1420 universe/ruby extra ruby_2.3.1-1.dsc
+ 0d896c2e7fd54f722b399f407e48a4c6 17797997 universe/ruby extra ruby_2.3.1.orig.tar.gz
+ d7152b26cdb1498bba2c611b9c9010f4 2125 universe/ruby extra ruby_2.3.1-1.debian.tar.gz
+ d1d42770e4d31f32ff18c2e9a9652d4d 8410486 universe/ruby extra ruby-stable_2.3.1-1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJXVH0gAAoJEI5CVUBEQUQNFRAH+QFjvseWY8xDX5v9AY/lvPfd
+g9S2LVIetBOcKh3qdcJT8ysIB7P97VJDL65AAHobdeGrdcGCK1Bory5rWfuIZbgj
+WMKI3HFFz1h8wmtcEf0IOT919Js5XaX28Ym7rWFwQA2oyCx7fHeXTq5dYmKtr5Fb
+S1eLpTiJrt2EYgHKylSn8z7eYPkseCzBqoQjT5qjqf1DA44qCRiq13TK3DbTNvqm
+3BFzIQYtvXOd6x48qOamsezJq/mmBPQzALkvtx00gI+uTc6JvSSa2ugdLltxKqoP
+FjeNasDyznHjEdjDO4SmQ8djvC7eUN33zwpd1tEeZN4Dhiu+10EkaYas7ntOzok=
+=EYk6
+-----END PGP SIGNATURE-----
