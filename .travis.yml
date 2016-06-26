@@ -14,3 +14,6 @@ notifications:
       - kleber_kbm@hotmail.com
       - Gustavo.sabino@hotmail.com
     on_success: always  
+
+after_success:
+  - "bundle exec cap deploy"
