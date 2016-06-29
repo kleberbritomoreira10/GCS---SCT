@@ -17,8 +17,8 @@ notifications:
       - Gustavo.sabino@hotmail.com
     on_success: always  
 
-after_success:
-  - "bundle exec cap deploy"
+# after_success:
+#   - "bundle exec cap deploy"
 
 deploy:
   provider: heroku
