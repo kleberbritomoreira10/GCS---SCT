@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20150619174303) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "campaigns", force: :cascade do |t|
     t.string   "name"
     t.string   "url"
@@ -50,8 +53,8 @@ ActiveRecord::Schema.define(version: 20150619174303) do
     t.integer  "state_id"
   end
 
-  add_index "clinics", ["state_id"], name: "index_clinics_on_state_id"
-  add_index "clinics", ["user_id"], name: "index_clinics_on_user_id"
+  add_index "clinics", ["state_id"], name: "index_clinics_on_state_id", using: :btree
+  add_index "clinics", ["user_id"], name: "index_clinics_on_user_id", using: :btree
 
   create_table "drugs", force: :cascade do |t|
     t.string   "name"
