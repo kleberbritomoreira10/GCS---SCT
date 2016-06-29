@@ -1,7 +1,11 @@
 language: ruby
 
 script:
-  -U postgres
+  - bundle install
+  - rake db:create
+  - rake db:migrate
+  - rake db:seed
+  - bundle exec rake
 
 rvm:
   - 2.1.0
