@@ -1,28 +1,23 @@
 language: ruby
-
 script:
-  - bundle install
-  - bundle exec rake db:create
-  - bundle exec rake db:migrate
-  - bundle exec rake db:seed
-  - bundle exec rake
-
+- bundle install
+- bundle exec rake db:create
+- bundle exec rake db:migrate
+- bundle exec rake db:seed
+- bundle exec rake
 rvm:
-  - 2.1.0
+- 2.1.0
 notifications:
   email:
     recipients:
-      - kleberbritomoreira10@gmail.com
-      - kleber_kbm@hotmail.com
-      - Gustavo.sabino@hotmail.com
-    on_success: always  
-
-# after_success:
-#   - "bundle exec cap deploy"
-
+    - kleberbritomoreira10@gmail.com
+    - kleber_kbm@hotmail.com
+    - Gustavo.sabino@hotmail.com
+    on_success: always
 deploy:
   provider: heroku
   api_key:
-    secure: WubnQBXU6oLXh1FhKKBKfdRqp3tIUwOL0oho0sTI+oyypGRmWz9xpgssdl8IffqMrzmwHNz9B+VVUZOVi0wuRcaqb9bbi2mvxLvqk3+k7ZIcCwHL3VjdfcjeydUiEjvQ5BS26w11dTcVMLPtnW7SNrt8jP8unzZuz6FQgOJd6kqlDB0Fo/z1SAAnYC0+Dbn7MTVCzs31ISS8G3o69NxgcJTe+cTyJzRTx8Wk0tWRVdviTsXpgRuTl1rBMbxBhSaRawyZNxNXyeWrf3D9wL3Ixrh0Ql38+L2ol6k5IQeo9q7ZVvdtj7crvWiRSfIAZwuSV4N8/6oD/yhr9p5tTFbIwNNqaMp3n4oMW1LQjly/sn9OVCIXpx4Tj7N5162DxryPMdzVgh7I/zXAuZ6qmlFtrIvaXZND93A84vhmiwxP6pOmG/j4YWzGoPzQk2TfI4fcy41nL1VgFtv6RnOwSgrXg7cHqeIfnpTyj6p1jK9/0DDlp6bm1ywY0rzXjrHSz+95mM32bx8BNzOr/fb7Dd4C4HOKTIEh+f7+vEnCTv5KzUWOM5cLUkgdQJOfZShDFKGLxq97YzUgjNzGgM79P8Mb0aDlhGeHn2Cp30q1jzVWUuaIIL6Kr87CaTwjAaPB77JEmL9Olkz2uwAgEqNZcaBCtuyV9RZs0hYnaDzypPWHR6M=
-  on: 
-    all_branches: true
+    secure: UtRxHYEhu52xOj2+pIHgG3ZJuR97YczazKx6hT3tMdejI9WSqy3Pw2NaGKmYPEGifAIUjTMqLQb9AFLtB3oNibO8i3syubDI7QyFKXEKpvdCi0Q7aFJKqkA860klu+4a0Gy2R41SIoS8S2XRySvtGAxP5HYhBN6ihPHN372riW/dlEkiL4hPQrubE8BB14l+NZ0EUOFlXOaCMGER/rBTDGhL21KhY1VdhhXLTi3Ub4LgHsAsiFpYgX0H5AZTFc+aEbLYkaa4FJvk+8ri4JVQtieOHLX6jbjMMN1a6sECG3LyiAmOVqXZoO+eeFwtetDVc/gmc7PkFNRltYP6N3ceM4mvHZrlBedIXxlxAjK842I95M281rLR+9u8gmF0vOPzMAicAMOdvQzZYmzkW4BTtY5iKsANOWPhAoR646rfpjXgKJwGNjPGsX36GawQYHkhgUQaFcg+DQETK5n4d0nLKV1FQyr8lUVjn8FABDUVo+oYMZqmf5ve5P39OxJQBSrwZD8a1ESTWvgLu4lOqLfEf2WmsKyI3OqUB6thr7GEZcYHSOpzWruXsZXtUbKBPqoF7LrMpMVrMZykIGn91gsCQXeI9SxhvBCTDBw8bcKj0pGMSYsNT2cowoc/HdnGGXfs38PyW3LWO3Q3EHeA5+WHtktExCvx2xH4Ejch3wx08AY=
+  app: sct-app
+  on:
+    repo: kleberbritomoreira10/GCS---SCT
