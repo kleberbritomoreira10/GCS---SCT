@@ -17,3 +17,9 @@ notifications:
 
 after_success:
   - "bundle exec cap deploy"
+
+deploy:
+  provider: heroku
+  api_key: c2df1f32-326f-44a9-b41a-6729054f4002
+  on: 
+    all_branches: true
